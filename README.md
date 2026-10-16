@@ -64,8 +64,16 @@ law.
 
 ## Installation
 
-Copy `ComfyUI_SegFitTools` into `ComfyUI/custom_nodes`, then restart ComfyUI.
-The nodes appear under `SegFitTools/Mask` and `SegFitTools/Fit`.
+If you are on Windows, open PowerShell or the Command Prompt and enter the following commands.
+
+Exp.
+cd c:\comfyUI\custom_nodes
+
+git clone https://github.com/megu88sun/ComfyUI_SegFitTools.git
+
+
+That is all.
+There are no requirements.txt, install.py, or pyproject.toml files, so just restart ComfyUI as it is.
 
 ### Public and premium packages
 
