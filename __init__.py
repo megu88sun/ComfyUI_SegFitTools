@@ -111,34 +111,9 @@ from .densepose_cropper import DensePoseCropper
 from .underwear_mask_restorer import UnderwearMaskRestorer
 from .mannequin_cropper import MannequinCropper
 from .mannequin_body_scaler import MannequinBodyScaler
-
-
-# ==============================================================================
-# SegFit Analysis Base Nodes
-#
-# Keep only the analysis nodes that may still be used as the input/base for
-# the 003 BODY-line exclusion stage.
-# ==============================================================================
-
-# These legacy analysis nodes are intentionally not imported or registered.
-# from .lineart_canny_relation import LineArtCannyRelation
-# from .hed_relation import HEDRelation
-# from .hed_canny_overlay import HEDCannyOverlay
-
-
-# ==============================================================================
-# SegFit TEST Infrastructure
-# ==============================================================================
-
 from .save_segfit_test_checkpoint import SaveSegFitTestCheckpoint
 from .load_segfit_test_checkpoint import LoadSegFitTestCheckpoint
 from .debug_body_crop_save import DebugBodyCropSave  # Temporary debug registration.
-
-# These investigation-only nodes are intentionally disabled in production.
-# from .densepose_part_extractor import DensePosePartExtractor
-# from .garment_anchor_detector import GarmentAnchorDetector
-# from .garment_line_detector_node import GarmentLineDetectorNode
-
 
 # ==============================================================================
 # Web
@@ -187,26 +162,9 @@ NODE_CLASS_MAPPINGS = {
     "UnderwearMaskRestorer": UnderwearMaskRestorer,
     "MannequinCropper": MannequinCropper,
     "MannequinBodyScaler": MannequinBodyScaler,
-
-    # --------------------------------------------------------------------------
-    # Analysis Base
-    # --------------------------------------------------------------------------
-
-    # "LineArtCannyRelation": LineArtCannyRelation,
-    # "HEDRelation": HEDRelation,
-    # "HEDCannyOverlay": HEDCannyOverlay,
-
-    # --------------------------------------------------------------------------
-    # TEST Infrastructure
-    # --------------------------------------------------------------------------
-
     "SaveSegFitTestCheckpoint": SaveSegFitTestCheckpoint,
     "LoadSegFitTestCheckpoint": LoadSegFitTestCheckpoint,
     "DebugBodyCropSave": DebugBodyCropSave,  # Temporary debug registration.
-
-    # "DensePosePartExtractor": DensePosePartExtractor,
-    # "GarmentAnchorDetector": GarmentAnchorDetector,
-    # "GarmentLineDetectorNode": GarmentLineDetectorNode,
 }
 
 
@@ -250,26 +208,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "UnderwearMaskRestorer": "Underwear Mask Restorer",
     "MannequinCropper": "Mannequin Cropper",
     "MannequinBodyScaler": "Mannequin Body Scaler",
-
-    # --------------------------------------------------------------------------
-    # Analysis Base
-    # --------------------------------------------------------------------------
-
-    # "LineArtCannyRelation": "LineArt-Canny Relation (TEST)",
-    # "HEDRelation": "HED Relation (TEST)",
-    # "HEDCannyOverlay": "HED Canny Overlay (TEST)",
-
-    # --------------------------------------------------------------------------
-    # TEST Infrastructure
-    # --------------------------------------------------------------------------
-
     "SaveSegFitTestCheckpoint": "Save SegFit TEST Checkpoint",
     "LoadSegFitTestCheckpoint": "Load SegFit TEST Checkpoint",
-    # "DensePosePartExtractor": "Denspose Part Extractor(TEST)",
-    # "GarmentAnchorDetector": "Garment Anchor Detector (TEST)",
-    # "GarmentLineDetectorNode": "Garment Line Detector (TEST)",
-    #
-    # Please feel free to use this for your tests as well.
     "DebugBodyCropSave": "Body Crop and Save (DEBUG)",
 }
 
