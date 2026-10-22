@@ -1,6 +1,6 @@
 # SegFitTools
 
-Small ComfyUI nodes for mask cleanup and mask-guided garment placement.
+A node pack for ComfyUI designed for virtual try-ons of women’s undergarments.
 
 ## Legal and Safety Notice
 
