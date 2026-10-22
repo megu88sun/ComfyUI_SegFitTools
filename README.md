@@ -1,6 +1,10 @@
 # SegFitTools
 
 A node pack for ComfyUI designed for virtual try-ons of women’s undergarments.
+For a detailed explanation and overview of the node packs, please click here.
+- Try On...    https://note.com/megu_papa3/n/nda649ce03d86
+- Try On...(2) https://note.com/megu_papa3/n/nef247358f3e8
+- Try On...(3) https://note.com/megu_papa3/n/nf10e6f6c986a
 
 ## Legal and Safety Notice
 
